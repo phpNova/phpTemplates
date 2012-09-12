@@ -1,0 +1,15 @@
+<!-- Template:  Window Embedded - Looks like an AJAX popup window but instead exists in the normal page flow. -->
+<!-- All templates are called from controller.class.php.  Do NOT edit PHP files without consulting R&D first! -->
+
+<div class="ajaxwindowtitle" name="ajaxwindowtitleem" id="ajaxwindowtitleem">
+&nbsp;
+</div>
+
+<div class="ajaxwindowbody" name="ajaxwindowbodyem" id="ajaxwindowbodyem">
+&nbsp;
+</div>
+
+<script language="JavaScript">
+loadTemplate( "windowtitle&title={@title}&windowdivid=ajaxwindowtitleenx&hidex=1", "ajaxwindowtitleem", true );
+loadTemplate( "{@templateem}{@params}&ajaxwindowdivid=ajaxwindowbodyem", "ajaxwindowbodyem" );
+</script>
